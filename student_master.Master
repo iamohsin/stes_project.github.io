@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="student_master.master.cs" Inherits="mas.student_master" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Teacher Evaluation System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+        .auto-style1 {
+            font-size: large;
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+        .auto-style3 {
+            height: 764px;
+        }
+        .auto-style4 {
+            font-size: medium;
+        }
+        .auto-style5 {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-blue " style="width:14%; text-align: right; left: 0px; top: 0px;">
+    <h3 class="w3-bar-item">&nbsp;</h3>
+    <div class="w3-center">
+        <span class="auto-style1">
+            <br>
+
+        <br />
+
+        <br />
+        <br />
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/evalution.aspx" CssClass="auto-style5">Give Feedback</asp:HyperLink>
+        <br />
+        <br />
+      <br>
+
+    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/viewstdinfo.aspx" CssClass="auto-style5">My Infomation</asp:HyperLink>
+        <br />
+        <br />
+        <br>
+    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/change_stdpass.aspx" CssClass="auto-style5">Change Password</asp:HyperLink>
+        <br />
+        <br>
+        </span><br>
+    </div>
+    
+    <br />
+&nbsp;</div>
+
+<!-- Page Content -->
+<div style="margin-left:14%">
+
+<div class="w3-container w3-blue">
+  <h3 class="w3-center">&nbsp;Student Teacher Evaluation System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <asp:Button ID="Button1" runat="server" BackColor="#6699FF" BorderColor="White" ForeColor="White" OnClick="Button1_Click" Text="Log Out" />
+    </h3>
+</div>
+
+
+
+<div class="w3-container">
+    
+    <table class="auto-style2">
+        <tr>
+            <td class="auto-style3"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <p>
+            &nbsp;</p>
+    </asp:ContentPlaceHolder></td>
+        </tr>
+        
+        <tr>
+            <td class="w3-center">
+                <asp:Label ID="Label1" runat="server" CssClass="auto-style4" Text="Website Created by Mohsin &amp; Farhan"></asp:Label>
+            </td>
+        </tr>
+    </table>
+    
+</div>
+    </form>
+   
+
+      
+</body>
+</html>
+

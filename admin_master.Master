@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin_master.master.cs" Inherits="mas.admin_master" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Teacher Evaluation System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+        .auto-style1 {
+            font-size: large;
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+        .auto-style3 {
+            height: 764px;
+        }
+        .auto-style4 {
+            font-size: medium;
+        }
+        .auto-style5 {
+            text-align: center;
+            height: 473px;
+        }
+        .auto-style6 {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-blue " style="width:14%; text-align: right; left: 0px; top: 0px;">
+    <h3 class="w3-bar-item">&nbsp;</h3>
+    <div class="auto-style5">
+        <span class="auto-style1">
+            <br>
+
+        <br />
+
+        <br />
+        <br />
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Manage student.aspx" CssClass="auto-style6">Manage Student </asp:HyperLink>
+        <br />
+        <br />
+      <br>
+
+    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Manage Teacher.aspx" CssClass="auto-style6">Manage Teacher</asp:HyperLink>
+        <br />
+        <br />
+        <br>
+    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Manage hod.aspx" CssClass="auto-style6">Manage HOD</asp:HyperLink>
+        <br />
+        </span>
+        <br />
+        <br />
+        <span class="auto-style1">
+    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Manage Subject.aspx" CssClass="auto-style6">Manage Subject</asp:HyperLink>
+        <br />
+        <br />
+        <br />
+    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/tea_sub.aspx" CssClass="auto-style6">Teachers And Subjects</asp:HyperLink>
+        <br />
+        <br />
+        <br />
+    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/managedepartment.aspx" CssClass="auto-style6">Manage Department</asp:HyperLink>
+        <br />
+        <br />
+        <br />
+    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Manege Program.aspx" CssClass="auto-style6">Manage Program</asp:HyperLink>
+        <br />
+        <br />
+        </span>
+    </div>
+    
+        </div>
+
+<!-- Page Content -->
+        <div style="margin-left:14%">
+
+            <div class="w3-container w3-blue">
+                <h3 class="w3-center">Student Teacher Evaluation System&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <asp:Button ID="Button1" runat="server" BackColor="#6699FF" BorderColor="White" ForeColor="White" OnClick="Button1_Click" Text="Log Out" />
+    </h3>
+</div>
+
+
+
+<div class="w3-container">
+    
+    <table class="auto-style2">
+        <tr>
+            <td class="auto-style3"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <p>
+            &nbsp;</p>
+    </asp:ContentPlaceHolder></td>
+        </tr>
+        
+        <tr>
+            <td class="w3-center">
+                <asp:Label ID="Label1" runat="server" CssClass="auto-style4" Text="Website Created by Mohsin &amp; Farhan"></asp:Label>
+            </td>
+        </tr>
+    </table>
+    
+</div>
+    </form>
+   
+
+      
+</body>
+</html>
+
